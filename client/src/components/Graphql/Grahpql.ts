@@ -13,4 +13,3 @@ export const get =async (email:string):Promise<void> => {
     const data = await gRequest(query)
     return data
 }
-

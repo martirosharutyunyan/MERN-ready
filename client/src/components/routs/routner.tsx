@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, NavLink, Link,Redirect } from 'react-router-dom';
-import { action } from '../redux/actions/action';
 import { useDispatch, useSelector } from 'react-redux';
 //types
 import { Redux } from '../types/types';
