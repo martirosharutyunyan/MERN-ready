@@ -1,12 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.client = void 0;
-const pg_1 = require("pg");
-exports.client = new pg_1.Client({
-    database: process.env.postgresDBname,
-    password: process.env.postgresDBpassword,
-    port: 5432,
-    host: "localhost",
-    user: "postgres",
+exports.sequelize = void 0;
+const sequelize_1 = require("sequelize");
+exports.sequelize = new sequelize_1.Sequelize(process.env.POSTGRESDBNAME, 'postgres', process.env.POSTGRESDBPASSWORD, {
+    host: '127.0.0.1',
+    dialect: 'postgres'
 });
+// export const model = sequelize.define('')
 //# sourceMappingURL=postgres.js.map
